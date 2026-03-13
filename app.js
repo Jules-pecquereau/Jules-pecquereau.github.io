@@ -21,6 +21,26 @@ document.addEventListener("DOMContentLoaded", () => {
         appearOnScroll.observe(fader);
     });
 
+    // 1.1 Animation des barres de compétences
+    const skillBars = document.querySelectorAll('.skill-bar-fill');
+    const skillOptions = {
+        threshold: 0.5
+    };
+
+    const animateSkillBars = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const bar = entry.target;
+            const percent = bar.getAttribute('data-percent');
+            bar.style.width = percent + '%';
+            observer.unobserve(bar);
+        });
+    }, skillOptions);
+
+    skillBars.forEach(bar => {
+        animateSkillBars.observe(bar);
+    });
+
     // 2. Défilement doux (Smooth Scroll) pour la navigation
     document.querySelectorAll('.nav-links a, .hero-cta a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
