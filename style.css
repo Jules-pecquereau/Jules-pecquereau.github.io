@@ -164,6 +164,7 @@ h3 {
 .gradient-text {
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
