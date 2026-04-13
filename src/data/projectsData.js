@@ -25,7 +25,7 @@ export const projectsData = [
     coverImage: "/images/clinique-medicale.png",
     techStack: ["HTML5", "PHP", "SQL"],
     githubLink: "https://github.com/Jules-pecquereau/exercice-clinique-medicale",
-    context: "Dans le cadre de ma formation, réalisation d'une application de gestion pour un cabinet médical afin de dématérialiser les dossiers patients.",
+    context: "réalisation d'une application de gestion pour un cabinet médical afin de dématérialiser les dossiers patients.",
     objectives: [
       "Permettre l'ajout, la modification et la suppression de fiches patients.",
       "Créer un système de prise de rendez-vous.",
@@ -33,7 +33,7 @@ export const projectsData = [
     ],
     environment: "PHP(laravel), HTML/CSS, base de données MySQL avec requêtes préparées (PDO).",
     skills: ["laravel", "Requêtes SQL (CRUD)", "Sécurité des données (Injection SQL)", "Intégration HTML/CSS"],
-    additionalInfo: "Une attention particulière a été portée sur la sécurisation de l'accès aux données de santé."
+    additionalInfo: "Une attention particulière a été portée sur la sécurisation de l'accès aux données de santé. Etant des données sensibles, il était important de mettre en place des mesures de sécurité robustes."
   },
   {
     id: 'calc-enfant',
