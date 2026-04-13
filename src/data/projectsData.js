@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     id: 'e6-projet',
-    title: "E6 - Projet de fin d'année",
+    title: "Proxi, Produit, Service et Activité",
     year: "2026",
     shortDescription: "Création d'un site marchand pour la vente de produit locaux de la région de Loire Atlantique.",
     coverImage: "/images/e6-projet.png",
