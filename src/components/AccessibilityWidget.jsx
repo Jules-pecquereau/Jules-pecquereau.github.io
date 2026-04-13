@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const AccessibilityWidget = () => {
+const AccessibilityWidget = ({ stopAnimation, setStopAnimation }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [highContrast, setHighContrast] = useState(false);
     const [largeText, setLargeText] = useState(false);
@@ -63,6 +63,21 @@ const AccessibilityWidget = () => {
                                         checked={largeText} 
                                         onChange={() => setLargeText(!largeText)} 
                                         aria-label="Agrandir la taille du texte"
+                                    />
+                                    <span className="slider round"></span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div className="a11y-option">
+                            <label className="switch-label">
+                                <span className="switch-text">Stopper l'animation</span>
+                                <div className="switch">
+                                    <input 
+                                        type="checkbox" 
+                                        checked={stopAnimation} 
+                                        onChange={() => setStopAnimation(!stopAnimation)} 
+                                        aria-label="Stopper l'animation d'arrière-plan"
                                     />
                                     <span className="slider round"></span>
                                 </div>

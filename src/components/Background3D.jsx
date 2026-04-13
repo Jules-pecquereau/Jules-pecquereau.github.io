@@ -1,8 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-const Background3D = () => {
+const Background3D = ({ stopAnimation }) => {
     const canvasRef = useRef(null);
+    const stopAnimationRef = useRef(stopAnimation);
+
+    useEffect(() => {
+        stopAnimationRef.current = stopAnimation;
+    }, [stopAnimation]);
 
     useEffect(() => {
         if (!canvasRef.current) return;
@@ -109,31 +114,33 @@ const Background3D = () => {
         function animate() {
             animationFrameId = requestAnimationFrame(animate);
 
-            targetX = mouseX * 2;
-            targetY = mouseY * 2;
-            camera.position.x += (targetX - camera.position.x) * 0.02;
-            camera.position.y += (-targetY - camera.position.y) * 0.02;
-            camera.lookAt(scene.position);
+            if (!stopAnimationRef.current) {
+                targetX = mouseX * 2;
+                targetY = mouseY * 2;
+                camera.position.x += (targetX - camera.position.x) * 0.02;
+                camera.position.y += (-targetY - camera.position.y) * 0.02;
+                camera.lookAt(scene.position);
 
-            particles.rotation.y += 0.001;
-            particles.rotation.x += 0.0005;
-            linesMesh.rotation.y += 0.001;
-            linesMesh.rotation.x += 0.0005;
+                particles.rotation.y += 0.001;
+                particles.rotation.x += 0.0005;
+                linesMesh.rotation.y += 0.001;
+                linesMesh.rotation.x += 0.0005;
 
-            const positions = particles.geometry.attributes.position.array;
+                const positions = particles.geometry.attributes.position.array;
 
-            for (let i = 0; i < particleCount; i++) {
-                positions[i * 3] += velocities[i].x;
-                positions[i * 3 + 1] += velocities[i].y;
-                positions[i * 3 + 2] += velocities[i].z;
+                for (let i = 0; i < particleCount; i++) {
+                    positions[i * 3] += velocities[i].x;
+                    positions[i * 3 + 1] += velocities[i].y;
+                    positions[i * 3 + 2] += velocities[i].z;
 
-                if (Math.abs(positions[i * 3]) > 25) velocities[i].x *= -1;
-                if (Math.abs(positions[i * 3 + 1]) > 25) velocities[i].y *= -1;
-                if (Math.abs(positions[i * 3 + 2]) > 25) velocities[i].z *= -1;
+                    if (Math.abs(positions[i * 3]) > 25) velocities[i].x *= -1;
+                    if (Math.abs(positions[i * 3 + 1]) > 25) velocities[i].y *= -1;
+                    if (Math.abs(positions[i * 3 + 2]) > 25) velocities[i].z *= -1;
+                }
+                particles.geometry.attributes.position.needsUpdate = true;
+
+                updateLines(positions);
             }
-            particles.geometry.attributes.position.needsUpdate = true;
-
-            updateLines(positions);
             renderer.render(scene, camera);
         }
 
