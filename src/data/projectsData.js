@@ -7,7 +7,7 @@ export const projectsData = [
     coverImage: "/images/e6-projet.png",
     techStack: ["PHP", "Laravel", "C#"],
     githubLink: "https://github.com/Jules-pecquereau/site_marchand-stage",
-    context: "Il s'agit de l'épreuve E6 de mon BTS SIO. L'objectif était de simuler le développement d'une plateforme complète d'e-commerce.",
+    context: "il s'agit d'un projet demander par l'entreprise pour laquelle j'ai effectué mon stage, l'objectif est de créer un site marchand pour la vente de produit locaux de la région de Loire Atlantique.",
     objectives: [
       "Développer une interface client intuitive pour l'achat de produits.",
       "Concevoir un panel administrateur/marchand robuste.",
@@ -31,8 +31,8 @@ export const projectsData = [
       "Créer un système de prise de rendez-vous.",
       "Générer et stocker des ordonnances numériquement."
     ],
-    environment: "PHP natif (sans framework), HTML/CSS, base de données MySQL avec requêtes préparées (PDO).",
-    skills: ["PHP Vanilla", "Requêtes SQL (CRUD)", "Sécurité des données (Injection SQL)", "Intégration HTML/CSS"],
+    environment: "PHP(laravel), HTML/CSS, base de données MySQL avec requêtes préparées (PDO).",
+    skills: ["laravel", "Requêtes SQL (CRUD)", "Sécurité des données (Injection SQL)", "Intégration HTML/CSS"],
     additionalInfo: "Une attention particulière a été portée sur la sécurisation de l'accès aux données de santé."
   },
   {
@@ -43,7 +43,7 @@ export const projectsData = [
     coverImage: "/images/calc-enfant.png",
     techStack: ["HTML5", "CSS3", "JS Vanilla"],
     githubLink: "https://github.com/Jules-pecquereau/projet-appli-enfant-",
-    context: "Projet d'apprentissage du JavaScript. Le but était de concevoir un outil éducatif pour les enfants.",
+    context: "Projet d'apprentissage du JavaScript et du développement web. Le but était de concevoir un outil éducatif pour les enfants.",
     objectives: [
       "Rendre l'interface colorée et attrayante pour un jeune public.",
       "Implémenter une calculatrice fonctionnelle avec les opérations de base.",
