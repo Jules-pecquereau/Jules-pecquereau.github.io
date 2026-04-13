@@ -19,7 +19,7 @@ const Navbar = () => {
 
     const handleScroll = (e, targetId) => {
         e.preventDefault();
-        
+
         if (location.pathname !== '/') {
             // Si on n'est pas sur l'accueil, on redirige vers l'accueil + hash
             navigate('/' + targetId);
@@ -38,7 +38,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="logo" onClick={() => navigate('/')} style={{cursor: 'pointer'}}>Jules.</div>
+            <div className="logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>Jules Pecquereau.</div>
             <ul className="nav-links">
                 <li><a href="#home" onClick={(e) => handleScroll(e, '#home')}>Accueil</a></li>
                 <li><a href="#projects" onClick={(e) => handleScroll(e, '#projects')}>Projets</a></li>
