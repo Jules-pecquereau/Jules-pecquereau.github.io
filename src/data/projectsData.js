@@ -7,7 +7,7 @@ export const projectsData = [
     coverImage: "/images/e6-projet.png",
     techStack: ["PHP", "Laravel", "C#"],
     githubLink: "https://github.com/Jules-pecquereau/site_marchand-stage",
-    context: "il s'agit d'un projet demander par l'entreprise pour laquelle j'ai effectué mon stage, l'objectif est de créer un site marchand pour la vente de produit locaux de la région de Loire Atlantique.",
+    context: "Ce projet commandé par l'entreprise TranqilAtHome dans laquelle j'ai effectué mon stage consistait en la création d'un site marchand pour la vente de produit locaux de la région de Loire Atlantique.",
     objectives: [
       "Développer une interface client intuitive pour l'achat de produits.",
       "Concevoir un panel administrateur/marchand robuste.",
