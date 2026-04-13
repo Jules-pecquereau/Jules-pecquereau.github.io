@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import Veille from '../components/Veille';
 import Contact from '../components/Contact';
 
 const Home = () => {
@@ -46,16 +46,13 @@ const Home = () => {
     <div id="ui-layer">
         <div className="blob-bg"></div>
         <div className="blob-bg blob-2"></div>
-        <Navbar />
         <main>
             <Hero />
             <Skills />
             <Projects />
+            <Veille />
             <Contact />
         </main>
-        <footer>
-            <p>&copy; 2026 Jules Pecquereau. Conçu avec passion.</p>
-        </footer>
     </div>
   );
 };

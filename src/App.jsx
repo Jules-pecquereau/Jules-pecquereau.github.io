@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import ProjectDetails from './pages/ProjectDetails';
 import Background3D from './components/Background3D';
 import AccessibilityWidget from './components/AccessibilityWidget';
+import Navbar from './components/Navbar';
 import { useState } from 'react';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <Background3D stopAnimation={stopAnimation} />
       <AccessibilityWidget stopAnimation={stopAnimation} setStopAnimation={setStopAnimation} />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projet/:id" element={<ProjectDetails />} />

@@ -21,6 +21,16 @@ const Hero = () => {
     return (
         <section id="home" className="hero section">
             <div className="hero-content fade-in">
+                <div className="status-bubbles-container">
+                    <div className="status-bubble success">
+                        <span>✓</span>
+                        <span>Build successful</span>
+                    </div>
+                    <div className="status-bubble info">
+                        <span>✓</span>
+                        <span>Disponible pour de nouveaux projets</span>
+                    </div>
+                </div>
                 <span className="subtitle">Développeur Web & Fullstack</span>
                 <h1 className="title">
                     {text.slice(0, splitIndex)}

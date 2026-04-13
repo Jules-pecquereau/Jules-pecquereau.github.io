@@ -37,7 +37,7 @@ const Skills = () => {
                         <div className="skill-item">
                             <div className="skill-info">
                                 <span>HTML5 / CSS3</span>
-                                <span className="skill-percentage">100%</span>
+                                <span className="skill-percentage">90%</span>
                             </div>
                             <div className="skill-bar-bg">
                                 <div className="skill-bar-fill" data-percent="90"></div>
