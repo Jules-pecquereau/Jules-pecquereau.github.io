@@ -834,7 +834,7 @@ body.large-text .nav-links a { font-size: 1.1rem; }
 }
 
 .a11y-toggle {
-    background: var(--card-bg);
+    background: rgba(10, 10, 15, 0.85);
     border: 1px solid var(--card-border);
     backdrop-filter: blur(10px);
     color: var(--accent-primary);
