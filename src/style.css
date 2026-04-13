@@ -869,9 +869,7 @@ body.large-text .nav-links a { font-size: 1.1rem; }
 }
 
 .a11y-menu {
-    background: var(--card-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: #0f111a; /* Fond opaque */
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     padding: 1.5rem;
