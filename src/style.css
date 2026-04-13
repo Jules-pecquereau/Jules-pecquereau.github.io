@@ -522,6 +522,144 @@ footer {
     margin-top: 4rem;
 }
 
+/* Project Details Page */
+.project-details-page {
+    min-height: 100vh;
+    padding: 2rem 5%;
+}
+
+.details-nav {
+    margin-bottom: 2rem;
+    padding-top: 6rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-primary);
+}
+
+.details-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+.details-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.details-header .glow-text {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin: 1rem 0;
+}
+
+.details-image {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    margin-bottom: 4rem;
+}
+
+.details-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.details-content.bento-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(min-content, auto);
+}
+
+.bento-context { grid-column: span 3; }
+.bento-objectives { grid-column: span 2; }
+.bento-environment { grid-column: span 1; }
+.bento-skills { grid-column: span 3; }
+.bento-extra { grid-column: span 3; }
+
+@media (max-width: 900px) {
+    .details-content.bento-layout {
+        grid-template-columns: 1fr;
+    }
+    .bento-context, .bento-objectives, .bento-environment, .bento-skills, .bento-extra {
+        grid-column: span 1;
+    }
+}
+
+
+.details-section.Glass-panel {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.details-section h2 {
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.details-section ul {
+    list-style-position: inside;
+    color: var(--text-muted);
+}
+
+.details-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tag {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.details-footer {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
 /* Scroll Animations */
 .fade-in {
     opacity: 0;
