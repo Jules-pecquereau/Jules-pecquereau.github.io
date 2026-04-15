@@ -136,7 +136,43 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
+            <div className="skill-category" style={{ transitionDelay: '0.1s' }}>
+                <div className="skill-icon"></div>
+                <h3>Competence transversale</h3>
+                <p className="skill-desc">Analyse et Compréhension du Besoin .</p>
+                <div className="skills-list">
+                    <div className="skill-item">
+                        <div className="skill-info">
+                            <span>Gestion du temps et des priorités</span>
+                            <span className="skill-percentage">65%</span>
+                        </div>
+                        <div className="skill-bar-bg">
+                            <div className="skill-bar-fill" data-percent="65"></div>
+                        </div>
+                    </div>
+                    <div className="skill-item">
+                        <div className="skill-info">
+                            <span>s’adapter à de nouveaux outils, langages, environnements, méthodes, curiosité et veille technologique</span>
+                            <span className="skill-percentage">75%</span>
+                        </div>
+                        <div className="skill-bar-bg">
+                            <div className="skill-bar-fill" data-percent="75"></div>
+                        </div>
+                    </div>
+                    <div className="skill-item">
+                        <div className="skill-info">
+                            <span>Travail en équipe</span>
+                            <span className="skill-percentage">85%</span>
+                        </div>
+                        <div className="skill-bar-bg">
+                            <div className="skill-bar-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
+
     );
 };
 
