@@ -14,7 +14,7 @@ const Hero = () => {
                 clearInterval(intervalId);
             }
         }, 50);
-        
+
         return () => clearInterval(intervalId);
     }, []);
 
@@ -40,7 +40,7 @@ const Hero = () => {
                     {text.length < fullText.length && <span className="cursor">|</span>}
                 </h1>
                 <p className="description">
-                    Je conçois et développe des applications web modernes, performantes et esthétiquement plaisantes avec une attention particulière aux détails UI/UX.
+                    Je conçois et développe des applications web modernes, performantes et esthétiquement plaisantes avec une attention particulière aux détails des interface Utilisateur et l'expérience Utilisateur.
                 </p>
                 <div className="hero-cta">
                     <a href="#projects" className="btn btn-primary">Voir mon travail</a>

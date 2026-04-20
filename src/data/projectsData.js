@@ -31,7 +31,7 @@ export const projectsData = [
       "Créer un système de prise de rendez-vous.",
       "Générer et stocker des ordonnances numériquement."
     ],
-    environment: "PHP(laravel), HTML/CSS, base de données MySQL avec requêtes préparées (PDO).",
+    environment: "PHP(laravel), Blade, base de données PostgreSQL avec requêtes préparées (PDO).",
     skills: ["laravel", "Requêtes SQL (CRUD)", "Sécurité des données (Injection SQL)", "Intégration HTML/CSS"],
     additionalInfo: "Une attention particulière a été portée sur la sécurisation de l'accès aux données de santé. Etant des données sensibles, il était important de mettre en place des mesures de sécurité robustes."
   },
