@@ -54,3 +54,4 @@ export const projectsData = [
     additionalInfo: "Ce projet m'a permis de solidifier mes bases en logique algorithmique avec JavaScript."
   }
 ];
+
