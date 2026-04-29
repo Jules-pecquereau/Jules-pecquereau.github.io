@@ -15,7 +15,12 @@ export const projectsData = [
     ],
     environment: "Laravel (PHP) pour le web, C# pour une potentielle application lourde, base de données MySQL.",
     skills: ["Développement backend", "Conception BDD", "MVC", "Gestion de projet"],
-    additionalInfo: "Le projet inclut la gestion des stocks et l'intégration de points relais."
+    documents: [
+      { name: "Doc Léger Technique", url: "/documents/doc_léger_technique.pdf" },
+      { name: "Doc Léger Utilisateur", url: "/documents/doc_leger_utilisateur.pdf" },
+      { name: "Doc Lourd Technique", url: "/documents/doc_lourd_technique.pdf" },
+      { name: "Doc Lourd Utilisateur", url: "/documents/doc_lourd_utilisateur.pdf" }
+    ]
   },
   {
     id: 'clinique-medicale',
