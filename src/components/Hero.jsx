@@ -42,10 +42,6 @@ const Hero = () => {
                 <p className="description">
                     Je conçois et développe des applications web modernes, performantes et esthétiquement plaisantes avec une attention particulière aux détails des interface Utilisateur et l'expérience Utilisateur.
                 </p>
-                <div className="hero-cta">
-                    <a href="#projects" className="btn btn-primary">Voir mon travail</a>
-                    <a href="#contact" className="btn btn-secondary">Me contacter</a>
-                </div>
             </div>
         </section>
     );
