@@ -10,10 +10,7 @@ const About = () => {
 
             <div className="about-container fade-in">
                 <div className="about-image">
-                    {/* Espace réservé pour la future photo */}
-                    <div className="image-placeholder">
-                        <span>Photo à venir</span>
-                    </div>
+                    <img src="images/photo_de_profil.png" alt="Jules" className="profile-pic" />
                 </div>
                 <div className="about-text">
                     <h3>Salut, moi c'est Jules</h3>
