@@ -24,14 +24,14 @@ const Hero = () => {
                 <div className="status-bubbles-container">
                     <div className="status-bubble success">
                         <span>✓</span>
-                        <span>Build successful</span>
+                        <span>Boot successful</span>
                     </div>
                     <div className="status-bubble info">
                         <span>✓</span>
                         <span>Disponible pour de nouveaux projets</span>
                     </div>
                 </div>
-                <span className="subtitle">Développeur Web & Fullstack</span>
+                <span className="subtitle">Technicien informatique </span>
                 <h1 className="title">
                     {text.slice(0, splitIndex)}
                     {text.length > splitIndex && (
@@ -40,7 +40,7 @@ const Hero = () => {
                     {text.length < fullText.length && <span className="cursor">|</span>}
                 </h1>
                 <p className="description">
-                    Je conçois et développe des applications web modernes, performantes et esthétiquement plaisantes avec une attention particulière aux détails des interface Utilisateur et l'expérience Utilisateur.
+                    Passionné de hardware, je prends plaisir à réparer, démonter, remonter et réutiliser des ordinateurs fixes. J’aime mettre les mains dans le matériel, comprendre les pannes et trouver des solutions concrètes pour donner une nouvelle utilité aux machines.
                 </p>
             </div>
         </section>
