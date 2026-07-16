@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
     const [text, setText] = useState("");
-    const fullText = "Créer des expériences web mémorables.";
-    const splitIndex = 26; // Index after "Créer des expériences web "
+    const fullText = "Réparer, monter et redonner vie aux PC fixes.";
+    const splitIndex = fullText.indexOf("PC fixes");
 
     useEffect(() => {
         let index = 0;
